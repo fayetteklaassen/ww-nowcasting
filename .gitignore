@@ -1,6 +1,13 @@
 # History files
 .Rhistory
 .Rapp.history
+# exclude all csv files
+*.csv
+# exclude all data-sources, figures, config, result files
+/data-sources/*
+/figures/*
+/result/*
+/result-deaths/*
 
 # Session Data files
 .RData

@@ -3,6 +3,7 @@
 .Rapp.history
 # exclude all csv files
 *.csv
+*.RDS
 # exclude all data-sources, figures, config, result files
 /data-sources/*
 /figures/*
@@ -27,6 +28,7 @@
 
 # RStudio files
 .Rproj.user/
+*.Rproj
 
 # produced vignettes
 vignettes/*.html

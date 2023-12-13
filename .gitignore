@@ -4,6 +4,9 @@
 # exclude all csv files
 *.csv
 *.RDS
+# include the public data files
+!/data-products/public-data.csv
+!/data-products/public-data-sero.csv
 # exclude all data-sources, figures, config, result files
 /data-sources/*
 /figures/*

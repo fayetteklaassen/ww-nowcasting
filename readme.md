@@ -2,9 +2,9 @@
 
 This is a repository containing the code, and, upon publication, data to reproduce the analyses for the manuscript:
 
-Klaassen, F, Holm, RH, Smith, T, Cohen, T, Bhatnagar, A, Menzies, NA. (2023, under review). *Predictive power of wastewater for nowcasting infectious disease transmission: a retrospective case study of five sewershed areas in Louisville, Kentucky.*
+Klaassen, F, Holm, RH, Smith, T, Cohen, T, Bhatnagar, A, Menzies, NA. (2023). Predictive power of wastewater for nowcasting infectious disease transmission: a retrospective case study of five sewershed areas in Louisville, Kentucky. *Environmental Research, 240* (2024) 117395.
 
-(preprint link)[https://www.medrxiv.org/content/10.1101/2023.05.31.23290619v1]
+(link)[https://www.sciencedirect.com/science/article/pii/S0013935123021990]
 
 The files and folders in this repository can be used in the following steps:
 
@@ -18,7 +18,7 @@ The files and folders in this repository can be used in the following steps:
 
 This step results in a dataframe with the following variables
 - shedID  (character, ID for the sewershed)
-- weeknr  (integer, indicating the week number relative to the first available date)
+- date  (Date)
 - cases   (integer, reported total cases)
 - deaths  (integer, reported total deaths, using probabilistic imputation by populationsize)
 - deaths2 (integer, reported total deaths, using probabilistic imputation by reported COVID-19 risk)
@@ -30,7 +30,7 @@ This step results in a dataframe with the following variables
 An additional two data frames contain the by sewershed demographic information (population size, area, sewershed name); and the serosurvey data, coded by aggregated sewershed and date.
 
 All cleaned and analyzed data are stored (hidden) in `/data-products`
-The data that can be shared will be made public after publication. Death data are not publicly available but may be requested from Louisville Metro Department of Public Health and Wellness (LMPHW).  
+The data that can be shared will be made public after publication. Death data are not publicly available but may be requested from Louisville Metro Department of Public Health and Wellness (LMPHW). Publicly available data (see above, excluding the deaths data) are stored in `/data-products/data-public.csv`. 
 
 ## 2. Preparing data for covidestim
 We used the `covidestim` package, which has been adapted for the current model in the `wastewater` branch. This can be installed using the following commands in the terminal:
